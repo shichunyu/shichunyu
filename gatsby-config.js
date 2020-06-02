@@ -6,7 +6,7 @@
 
 module.exports = {
     siteMetadata: {
-        title: 'Gatsby Tutorial',
+        title: 'Learning GatsbyJS',
         author: 'ChunYu Shi'
     },
     plugins: [
