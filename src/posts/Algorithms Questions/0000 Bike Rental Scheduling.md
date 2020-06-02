@@ -4,6 +4,8 @@ date: 2020-06-01
 ---
 # Bike Rental Scheduling
 
+```toc
+```
 ## Bike Rental Scheduling
 
 You are a bike shop. You rent bikes out to people every day, but you need to order the bikes in advance for a given day. As such, you need to know how many bikes will be used on any given day. However, if a bike is used in the morning for example, we can use it again in the evening\(or whenever it is returned to the shop\)

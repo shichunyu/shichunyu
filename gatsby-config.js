@@ -37,6 +37,24 @@ module.exports = {
                 ]
             }
 
-        }
+        },
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    "gatsby-remark-sub-sup",
+                    "gatsby-remark-autolink-headers",
+                    {
+                        resolve: `gatsby-remark-table-of-contents`,
+                        options: {
+                            exclude: "Table of Contents",
+                            tight: false,
+                            fromHeading: 1,
+                            toHeading: 6
+                        },
+                    },
+                ],
+            },
+        },
     ],
 }
