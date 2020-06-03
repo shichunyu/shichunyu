@@ -17,14 +17,14 @@ module.exports = {
             options: {
                 name: 'src',
                 path: `${__dirname}/src/`
-            }
+            },
         },
-        'gatsby-plugin-sharp',
         {
-            resolve: 'gatsby-transformer-remark',
+            resolve: `gatsby-transformer-remark`,
             options: {
-                // plugins specific to remark transformer
                 plugins: [
+                    `gatsby-remark-line-breaks`,
+                    'gatsby-plugin-sharp',
                     'gatsby-remark-relative-images',
                     {
                         resolve: 'gatsby-remark-images',
@@ -32,16 +32,7 @@ module.exports = {
                             maxWidth: 750,
                             linkImagesToOriginal: false
                         }
-                    }
-
-                ]
-            }
-
-        },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-                plugins: [
+                    },
                     "gatsby-remark-sub-sup",
                     "gatsby-remark-autolink-headers",
                     {

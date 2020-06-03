@@ -11,7 +11,8 @@ const BlogPage = () => {
                 nodes {
                     frontmatter {
                         title,
-                        date
+                        date,
+                        number
                     }
                     fields {
                         slug
@@ -32,7 +33,7 @@ const BlogPage = () => {
                             <li className={blogStyles.post}>
                                 <Link to={`/blog/${node.fields.slug}`}>
                                     <h1>
-                                        {node.frontmatter.title}
+                                        {node.frontmatter.number}. {node.frontmatter.title}
                                     </h1>
                                     <p>{node.frontmatter.date}</p>
                                 </Link>
