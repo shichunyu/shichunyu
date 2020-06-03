@@ -26,7 +26,7 @@ const BlogPage = () => {
         <div>
             <Layout>
                 <Head title="Blog" />
-                <h1>Blog Posts</h1>
+                <h1>Algorithms</h1>
                 <ol className={blogStyles.posts}>
                     {data.allMarkdownRemark.nodes.map((node) => {
                         return (
