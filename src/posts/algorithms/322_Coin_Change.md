@@ -1,12 +1,9 @@
-# 322_Coin_Change
-```
 ---
 title: Coin Change
 number: 322
 tags: ["dynamic programming","recursion"]
 date: 2020.05.31
 ---
-```
 
 ```toc
 ```
