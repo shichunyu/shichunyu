@@ -20,6 +20,11 @@
     flex-direction: column;
 }
 
+.content {
+    margin: auto;
+    max-width: 750px;
+    margin-top: 1rem;
+}
 .bottom {
     flex-grow: 1;
     overflow-y: auto;

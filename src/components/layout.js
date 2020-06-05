@@ -9,7 +9,9 @@ const Layout = (props) => {
                 <SideNav/>
             </div>
             <div className={layoutStyles.columnRight}>
-                {props.children}
+                <div className={layoutStyles.content}>
+                    {props.children}
+                </div>
             </div>
         </div>
     )
