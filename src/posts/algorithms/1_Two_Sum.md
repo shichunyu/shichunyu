@@ -2,7 +2,7 @@
 title: Two Sum
 number: 1
 date: 2020.06.05
-tags: ["hash table/dictionary","binary search","recursion"]
+tags: ["dictionary/hash","binary search","recursion"]
 ---
 
 ```toc

@@ -2,7 +2,7 @@
 title: Destination City
 number: 1436
 date: 2020.06.05
-tags: []
+tags: ["dictionary/hash", "sets"]
 ---
 
 ```toc
@@ -13,7 +13,6 @@ tags: []
 Question Source: [Destination City - LeetCode](https://leetcode.com/problems/destination-city/)
 
 ## Description
-
 You are given the array `paths`, where `paths[i] = [cityAi, cityBi]` means there exists a direct path going from `cityAi` to `cityBi`. *Return the destination city, that is, the city without any path outgoing to another city.*
 
 It is guaranteed that the graph of paths forms a line without any loop, therefore, there will be exactly one destination city.
