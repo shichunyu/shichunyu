@@ -1,3 +1,5 @@
+// TODO: Fix layout CSS
+
 .container {
    height: 100%;
    overflow: hidden;
@@ -7,24 +9,21 @@
 }
 .column-left {
     height: 100%;
+    max-width: 450px;
     display: flex;
-    flex: 1;
-    max-width: 300px;
     flex-direction: column;
 }
 
 .column-right {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     height: 100%;
+    max-width: 900px;
     display: flex;
-    flex: 2;
     flex-direction: column;
 }
 
-.content {
-    margin: auto;
-    max-width: 750px;
-    margin-top: 1rem;
-}
 .bottom {
     flex-grow: 1;
     overflow-y: auto;

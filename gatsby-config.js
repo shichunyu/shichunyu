@@ -41,7 +41,7 @@ module.exports = {
                             exclude: "Table of Contents",
                             tight: false,
                             fromHeading: 1,
-                            toHeading: 6
+                            toHeading: 1
                         },
                     },
                 ],

@@ -31,7 +31,7 @@ const BlogPage = () => {
                     return (
                         <li className={blogListStyles.post}>
                             <Link to={`/blog/${node.fields.slug}`}>
-                                <p>{node.frontmatter.number}. {node.frontmatter.title}</p>
+                                {node.frontmatter.number}. {node.frontmatter.title}
                             </Link>
                         </li>
                     )
