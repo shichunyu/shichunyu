@@ -7,6 +7,7 @@ html {
 }
 body {
   margin: 0;
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -99,7 +100,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 1rem;
 }
 figure {
   margin: 1em 40px;
@@ -411,7 +412,7 @@ pre {
   border-radius: 3px;
   overflow: auto;
   word-wrap: normal;
-  padding: 1.45rem;
+  padding: 1.45rem 1.45rem 0 1.45rem;
 }
 table {
   margin-left: 0;
@@ -611,13 +612,13 @@ code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
-  content: " ";
+//   content: " ";
 }
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
-  content: "";
+//   content: "";
 }
 
 // Overwrite
