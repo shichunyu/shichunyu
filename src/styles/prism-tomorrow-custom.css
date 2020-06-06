@@ -46,6 +46,9 @@ pre[class*="language-"] {
 	border-radius: .2em;
     white-space: normal;
     background: rgb(250, 250, 250);
+    border-width: 1px;
+    border-color: rgb(177, 177, 177);
+    border-style: solid;
     color: rgb(222, 48, 48);
 }
 
