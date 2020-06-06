@@ -1,7 +1,8 @@
 import React from "react"
-import Layout from '../components/layout'
+import Layout from '../components/Layout/Layout'
 import Head from '../components/head'
 import '../styles/index.scss'
+import '../styles/colors.scss'
 import '../styles/prism-tomorrow-custom.css'
 
 const IndexPage = () => {
@@ -18,7 +19,6 @@ const IndexPage = () => {
             <p>This site is built using <a href="https://www.gatsbyjs.org/">GatsbyJS</a> (GraphQL & Markdown Files).</p>
             <p>Posts are written in <a href="https://bear.app/">Bear</a> and then exported as Markdown files for compiling.</p>
         </Layout>
-      
     </div>
   )
 }

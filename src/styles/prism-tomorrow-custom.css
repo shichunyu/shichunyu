@@ -50,6 +50,7 @@ pre[class*="language-"] {
     border-color: rgb(177, 177, 177);
     border-style: solid;
     color: rgb(222, 48, 48);
+    font-size: .9rem;
 }
 
 .token.comment,
