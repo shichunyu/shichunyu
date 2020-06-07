@@ -16,8 +16,11 @@ const RightHeader = () => {
     `)
 
     return(
-        <div>
-            <nav className={styles.navBar}>
+        <div className={styles.container}>
+            <div className={styles.title}>
+                {data.site.siteMetadata.title}
+            </div>
+            <div className={styles.navBar}>
                 <ul className={styles.navList}>
                     <li className={styles.navItem}>
                         <Link to="/">Home</Link>
@@ -26,7 +29,7 @@ const RightHeader = () => {
                         <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
     )
 }

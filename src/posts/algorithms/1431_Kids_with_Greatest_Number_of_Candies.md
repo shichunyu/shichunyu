@@ -1,4 +1,4 @@
---
+---
 title: Kids with Greatest Number of Candies
 number: 1431
 date: 2020.06.06

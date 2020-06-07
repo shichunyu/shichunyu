@@ -31,9 +31,11 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
+
+ul, ol {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
@@ -50,10 +52,11 @@ table {
 /* CUSTOM STYLES */
 // TODO - Get global color variables working
 $base-color: #3964da;
-$second-color: #1fda1f;
+$second-color: rgb(220, 63, 92);
+$red: rgb(250, 90, 90);
 
 body {
-    font-family: Helvetica Neue, Arial, Helvetica, Verdana, sans-serif;
+    font-family: "Avenir Next", Helvetica Neue, Arial, Helvetica, Verdana, sans-serif;
     line-height: 1.5;
     font-size: 1rem;
 }
@@ -109,6 +112,51 @@ a {
 
 a:hover {
     color: $second-color;
+}
+
+ul {
+    margin-left: 1.45rem;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 0rem;
+    list-style-position: outside;
+    list-style-image: none;
+    list-style: quote($string: "-  ");
+}
+
+ol {
+    margin-left: 1.45rem;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 1.45rem;
+    list-style-position: outside;
+    list-style-image: none;
+}
+
+.toc > ol, .toc > ul {
+    list-style: quote($string: "#  ");
+    color: $red;
+}
+
+.toc > ul > li {
+    margin-bottom: .5rem;
+}
+
+li::marker {
+    color: $red;
+    margin-right: .5rem;
+}
+
+li > p {
+    margin-bottom: 0;
 }
 
 // html, body {
@@ -350,30 +398,6 @@ a:hover {
 //   padding-right: 0;
 //   padding-top: 0;
 //   margin-bottom: 1.45rem;
-// }
-// ul {
-//   margin-left: 1.45rem;
-//   margin-right: 0;
-//   margin-top: 0;
-//   padding-bottom: 0;
-//   padding-left: 0;
-//   padding-right: 0;
-//   padding-top: 0;
-//   margin-bottom: 1.45rem;
-//   list-style-position: outside;
-//   list-style-image: none;
-// }
-// ol {
-//   margin-left: 1.45rem;
-//   margin-right: 0;
-//   margin-top: 0;
-//   padding-bottom: 0;
-//   padding-left: 0;
-//   padding-right: 0;
-//   padding-top: 0;
-//   margin-bottom: 1.45rem;
-//   list-style-position: outside;
-//   list-style-image: none;
 // }
 // dl {
 //   margin-left: 0;
