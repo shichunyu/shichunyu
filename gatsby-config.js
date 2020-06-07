@@ -10,6 +10,12 @@ module.exports = {
         author: 'ChunYu Shi'
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: "UA-168768504-1",
+            },
+        },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sass',
         {
