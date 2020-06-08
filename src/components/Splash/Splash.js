@@ -11,8 +11,8 @@ const IndexPage = () => {
                 </Link>
             </div>
             <div className={styles.box}>
-                <Link to="/moontalk">
-                        Moon Talk
+                <Link to="/moon">
+                    Moon Talk
                 </Link>
             </div>
         </div>

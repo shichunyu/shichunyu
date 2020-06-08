@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Head from '../components/head'
 import Layout from '../components/Algos/Layout/Layout'
 
 export const newsQuery = graphql`
