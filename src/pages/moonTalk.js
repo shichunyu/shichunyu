@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from '../components/MoonTalk/Layout/Layout'
 
+import Layout from '../components/MoonTalk/Layout/Layout'
 import News from '../components/MoonTalk/News/News'
 
 import '../styles/index.scss'
