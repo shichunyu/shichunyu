@@ -1,0 +1,22 @@
+.navBar {
+    padding: 1rem 2rem;
+    background-color: rgb(246, 214, 30);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 2rem;
+}
+
+.nav-item a { 
+    color: inherit;
+    font-weight: bold;
+}
+
+.nav-item  a:hover {
+    color: #fff;
+}

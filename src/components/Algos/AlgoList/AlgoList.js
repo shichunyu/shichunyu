@@ -30,7 +30,7 @@ const BlogPage = () => {
                 {data.allMarkdownRemark.nodes.map((node) => {
                     return (
                         <li className={blogListStyles.post}>
-                            <Link to={`/blog/${node.fields.slug}`}>
+                            <Link to={`/algos/${node.fields.slug}`}>
                                 {node.frontmatter.number}. {node.frontmatter.title}
                             </Link>
                         </li>

@@ -21,9 +21,12 @@ module.exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const blogTemplate = path.resolve('./src/templates/blog.js')
     // graphql() function returns a promise. we can use a then call but here we use async-await
-    const res = await graphql(`
+    const algoPosts = await graphql(`
         query {
-            allMarkdownRemark {
+            allMarkdownRemark (
+                filter: {fileAbsolutePath: {regex: "/(algorithms)/.*\\\\.md$/"}}
+            )
+            {
                 nodes {
                     fields {
                         slug
@@ -33,10 +36,10 @@ module.exports.createPages = async ({ graphql, actions }) => {
         }
     `)
 
-    res.data.allMarkdownRemark.nodes.forEach((node) => {
+    algoPosts.data.allMarkdownRemark.nodes.forEach((node) => {
         createPage({
             component: blogTemplate,
-            path: `/blog/${node.fields.slug}`,
+            path: `/algos/${node.fields.slug}`,
             context: {
                 slug: node.fields.slug
             }

@@ -1,0 +1,41 @@
+h1 {
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 0rem;
+}
+
+.date {
+    margin-right: 1rem;
+    margin-top: .5rem;
+    font-size: .9rem;
+    color: #929292;
+}
+
+.post {
+    flex: 1;
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px dotted #f6d61e;
+        margin: 2.5rem 0rem;
+        padding: 0;
+    }
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #f6d61e;
+}
