@@ -10,7 +10,9 @@ date: 2020.06.09
 
 ```
 
-## BFS
+
+
+# BFS
 
 ```python
 from collections import deque
@@ -56,7 +58,7 @@ dic = {
 """
 ```
 
-## DFS
+# DFS
 
 ```python
 class Solution:

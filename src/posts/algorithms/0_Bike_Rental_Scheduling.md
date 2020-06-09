@@ -16,6 +16,8 @@ To calculate the negative of a number in binary with Two's Complement, the formu
 
 > input: list of times bikes are checked out from output: how many bikes we need for that given day  
 
+inline `code`
+
 ```text
 example: [[8, 11], [15, 16]]
 output: 1

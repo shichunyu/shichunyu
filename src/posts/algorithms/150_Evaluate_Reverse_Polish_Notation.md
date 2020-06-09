@@ -8,6 +8,8 @@ date: 2020.05.07
 
 ```
 
+# Overview
+
 Evaluate the value of an arithmetic expression in Reverse Polish Notation.
 
 Valid operators are +, -, *, /. Each operand may be an integer or another expression.
@@ -47,7 +49,7 @@ Explanation:
 = 22
 ```
 
-## ✅ Using Stacks @shichunyu on May 7, 2020
+# ✅ Using Stacks @shichunyu on May 7, 2020
 
 ```python
 class Solution:
