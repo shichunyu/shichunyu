@@ -6,6 +6,7 @@ const BlogPage = () => {
     const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark (
+                filter: {fileAbsolutePath: {regex: "/(algorithms)/.*\\\\.md$/"}},
                 sort: {
                     fields: frontmatter___number,
                     order: ASC
