@@ -1,17 +1,16 @@
-# 226_Invert_Binary_Tree
-```
 ---
 title: Invert Binary Tree
 number: 226
 tags: ["binary tree","graphs"]
 date: 2020.06.01
 ---
-```
 
 ```toc
+
 ```
 
-## BFS Solution: O(n) / O(n)
+# BFS Solution: O(n) / O(n)
+
 **Runtime:** O(N) where N is the number of nodes in the tree
 **Space:** O(N) where N is the number of nodes in the tree
 

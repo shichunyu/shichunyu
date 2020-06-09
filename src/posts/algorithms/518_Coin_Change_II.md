@@ -1,17 +1,15 @@
-# 518_Coin_Change_II
-```
 ---
 title: Coin Change II
 number: 518
-tags: ["dynamic programming"]
 date: 2020.05.31
 ---
-```
 
 ```toc
+
 ```
 
 # Overview
+
 ## Sources
 Question Source:
 Helpful Explanations: Algoexpert.io
@@ -19,7 +17,7 @@ Helpful Explanations: Algoexpert.io
 ## Description
 
 You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin.
- 
+
 ```
 Example 1:
 Input: amount = 5, coins = [1, 2, 5]
@@ -43,7 +41,7 @@ Example 3:
 Input: amount = 10, coins = [10] 
 Output: 1
 ```
- 
+
 **Note:**
 You can assume that
 * 0 <= amount <= 5000

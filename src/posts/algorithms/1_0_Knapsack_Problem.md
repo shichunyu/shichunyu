@@ -5,15 +5,9 @@ date: 2020.05.29
 tags: [“dynamic programming”]
 ---
 
-# 1_0_Knapsack_Problem
+# Overview
 
-* [1/0 Knapsack Problem](#10-knapsack-problem)
-* [Top-Down Recursive Apprach](#top-down-recursive-apprach)
-	* [Intuition](#intuition)
-	* [Implementation](#implementation)
-* [Dynamic Programming Approach @shichunyu on May 29, 2020](#dynamic-programming-approach-shichunyu-on-may-29-2020)
-
-See the question here referenced at [Byte-to-Byte](https://www.byte-by-byte.com/01knapsack/)
+**Question Souce:** [Byte-to-Byte](https://www.byte-by-byte.com/01knapsack/)
 
 Given a list of items with values and weights, as well as a max weight, find the maximum value you can generate from items where the sum of the weights is less than the max.
 

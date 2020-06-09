@@ -1,10 +1,11 @@
 ---
-title: Subsets - Power Set
+title: Subsets (Power Set)
 number: 78
 date: 2020.06.03
 ---
 
 ```toc
+
 ```
 
 # Overview

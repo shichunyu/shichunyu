@@ -1,8 +1,7 @@
 ---
 title: Design Hashmap
 number: 706
-date: 2020.06.04
-
+date: 2020.05.08
 ---
 
 ```toc

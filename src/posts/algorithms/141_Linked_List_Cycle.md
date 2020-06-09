@@ -1,12 +1,14 @@
 ---
 title: Linked List Cycle
 number: 141
-date: 2020.05.06
+date: 2020.05.04
 ---
 
 ```toc
 
 ```
+
+# Overview
 
 Given a linked list, determine if it has a cycle in it.
 
@@ -40,7 +42,8 @@ Follow up:
 
 Can you solve it using O(1) (i.e. constant) memory?
 
-## ✅ Two Pointer ChunYu @ May 4, 2020
+# ✅ Two Pointer ChunYu @ May 4, 2020
+
 !!! Success O(N) Time & O(1) Space Runtime: 56 ms, faster than 18.60% of Python3 online submissions for Linked List Cycle. Memory Usage: 17 MB, less than 100.00% of Python3 online submissions for Linked List Cycle.
 
 ```python
@@ -120,7 +123,7 @@ s = Solution()
 print(s.hasCycle(linked_list.head))
 ```
 
-## ⭐️ Two Pointer Walker & Runner - elegant code
+# ⭐️ Two Pointer Walker & Runner - elegant code
 
 ```python
 class Solution:
@@ -135,7 +138,8 @@ class Solution:
         return False
 ```
 
-## ✅ Dictionary (Hash Map) ChunYu @ May 5, 2020
+# ✅ Dictionary (Hash Map) ChunYu @ May 5, 2020
+
 !!! Success O(N) Time & Space Runtime: 56 ms, faster than 18.60% of Python3 online submissions for Linked List Cycle. Memory Usage: 17 MB, less than 100.00% of Python3 online submissions for Linked List Cycle.
 
 ```python

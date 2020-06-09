@@ -1,8 +1,15 @@
-# 690_Employee_Importance
+---
+title: Employee Importance
+number: 690
+date: 2020.06.09
 
-* [690. Employee Importance](0690.-employee-importance.md#690-employee-importance)
-	* [BFS](0690.-employee-importance.md#bfs)
-	* [DFS](0690.-employee-importance.md#dfs)
+---
+
+```toc
+
+```
+
+# Overview
 
 You are given a data structure of employee information, which includes the employee's unique id, his importance value and his direct subordinates' id.
 

@@ -1,4 +1,15 @@
-# 703_Kth_Largest_Element_in_a_Stream
+---
+title: Kth Largest Element in a Stream
+number: 703
+date: 2020.05.22
+---
+
+```toc
+
+```
+
+# Overview
+
 Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.
 
 Your KthLargest class will have a constructor which accepts an integer k and an integer array nums, which contains initial elements from the stream. For each call to the method KthLargest.add, return the element representing the kth largest element in the stream.

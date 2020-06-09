@@ -8,6 +8,8 @@ date: 2020.05.05
 
 ```
 
+# Overview
+
 Given a linked list, remove the n-th node from the end of list and return its head.
 
 Example:
@@ -22,7 +24,8 @@ After removing the second node from the end, the linked list becomes 1->2->3->5.
 
 **Follow up:** Could you do this in one pass?
 
-## 2-Pointer @shichunyu on May 5, 2020
+# 2-Pointer @shichunyu on May 5, 2020
+
 `O(N) Time & Space Complexity` Runtime: 36 ms, faster than 32.41% of Python3 online submissions for Remove Nth Node From End of List. Memory Usage: 13.9 MB, less than 6.06% of Python3 online submissions for Remove Nth Node From End of List.
 
 ```python

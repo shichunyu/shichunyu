@@ -1,5 +1,14 @@
-# 323_Number_of_Connected_Components_in_an_Undirected_Graph
-![](323_Number_of_Connected_Components_in_an_Undirected_Graph/0323_Number_of_Connected_Component_in_an_Undirected_Graph.jpg)question
+---
+title: Number of Connected Components in an Undirected Graph
+number: 323
+date: 2020.06.09
+
+
+---
+
+```toc
+
+```
 
 ## BFS
 

@@ -1,6 +1,15 @@
-# 234_Palindrome_Linked_List
+---
+title: Palindrome Linked List
+number: 234
+date: 2020.05.06
+---
 
-## 234. Palindrome Linked List
+```toc
+
+```
+
+# Overview
+
 Given a singly linked list, determine if it is a palindrome.
 
 ```text

@@ -1,10 +1,15 @@
-# 215_Kth_Largest_Element_in_an_Array
+---
+title: Kth Largest Element in an Array
+number: 215
+tags: ["binary tree","graphs"]
+date: 2020.05.22
+---
 
-## 215. Kth Largest Element in an Array
+```toc
 
-* [215. Kth Largest Element in an Array](0215.-kth-largest-element-in-an-array.md#215-kth-largest-element-in-an-array)
-* [Minimum Priority Queue w/ MinHeap @shichunyu on May 22, 2020](0215.-kth-largest-element-in-an-array.md#minimum-priority-queue-w-minheap-shichunyu-on-may-22-2020)
-* [Codebreakers Solutions](0215.-kth-largest-element-in-an-array.md#codebreakers-solutions)
+```
+
+# Overview
 
 Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
 
@@ -50,7 +55,7 @@ if __name__ == '__main__':
     print(k.findKthLargest([3, 2, 3, 1, 2, 4, 5, 5, 6],4)) #4
 ```
 
-## Codebreakers Solutions
+## Heap Solutions
 **Solution 1:** use heapsort or some other sort to sort array and count back to Kth largest. => O(N*LogN)
 
 ```python

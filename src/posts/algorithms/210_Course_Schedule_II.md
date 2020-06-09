@@ -1,14 +1,15 @@
-# 210_Course_Schedule_II
+---
+title: Course Schedule II
+number: 210
+date: 2020.05.15
 
-## 210. Course Schedule II
+---
 
-* [210. Course Schedule II](0210.-course-schedule-ii.md#210-course-schedule-ii)
-	* [Note:](0210.-course-schedule-ii.md#note)
-* [Node Indegree @shichunyu on May 15, 2020](0210.-course-schedule-ii.md#node-indegree-shichunyu-on-may-15-2020)
-	* [The problem is a topological sort](0210.-course-schedule-ii.md#the-problem-is-a-topological-sort)
-		* [Setup](0210.-course-schedule-ii.md#setup)
-		* [Script](0210.-course-schedule-ii.md#script)
-* [DFS Solution (Leetcode)](0210.-course-schedule-ii.md#dfs-solution-leetcode)
+```toc
+
+```
+
+# Overview
 
 There are a total of n courses you have to take, labeled from 0 to n-1.
 
@@ -107,7 +108,7 @@ class Solution:
 def findOrder\(self, numCourses, prerequisites\):
 ```
 
-```text
+​```text
  """
  :type numCourses: int
  :type prerequisites: List[List[int]]
@@ -154,7 +155,7 @@ s = Solution() print(s.findOrder(6,[[1,0],[2,0],[2,1],[3,1],[3,2],[4,2],[4,3],[5
 > `O(N) Time & Space Complexity`  
 
 
-```python
+​```python
 from collections import defaultdict
 class Solution:
 
