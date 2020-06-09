@@ -1,10 +1,15 @@
-# 1437_Check_If_All_1s_are_at_Least_Length_K_Places_Away
+---
+title: Check If All 1's are at Least Length K Places Away
+number: 1437
+date: 2020.05.03
 
-* ChunYu: May 02, 2020
-* ID: 5401
-* Level: Medium
-* Minyoung: May 02, 2020
-* Tags: 2-Pointer
+---
+
+```toc
+
+```
+
+# Overview
 
 Given an array `nums` of 0s and 1s and an integer `k`, return `True` if all 1's are at least `k` places away from each other, otherwise return `False`.
 

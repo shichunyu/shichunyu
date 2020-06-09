@@ -1,4 +1,16 @@
-# 1446_Consecutive_Characters
+---
+title: Consecutive Characters
+number: 1446
+date: 2020.06.09
+
+---
+
+```toc
+
+```
+
+# Overview
+
 Given a string s, the power of the string is the maximum length of a non-empty substring that contains only one unique character.
 
 Return the power of the string.

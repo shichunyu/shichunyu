@@ -1,4 +1,16 @@
-# 933_Number_of_Recent_Calls
+---
+title: Number of Recent Calls
+number: 933
+date: 2020.05.07
+
+---
+
+```toc
+
+```
+
+# Overview
+
 Write a class RecentCounter to count recent requests.
 
 It has only one method: ping(int t), where t represents some time in milliseconds.

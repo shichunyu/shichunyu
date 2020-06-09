@@ -1,15 +1,13 @@
 ---
-title: Subsets (Power Set)
-date: 2020.06.03
+title: Subsets - Power Set
 number: 78
+date: 2020.06.03
 ---
 
 ```toc
-
 ```
 
-
-
+# Overview
 Given a set of **distinct** integers, *nums*, return all possible subsets (the power set).
 
 **Note:** The solution set must not contain duplicate subsets.
@@ -31,7 +29,7 @@ Output:
 ]
 ```
 
-## ✔While Loop @shichunyu Shi
+# ✔While Loop @shichunyu Shi
 Runtime: 76 ms, faster than 5.12% of Python3 online submissions for Subsets.
 
 Memory Usage: 14.1 MB, less than 5.95% of Python3 online submissions for Subsets.
@@ -65,7 +63,7 @@ problem = Solution()
 print(problem.subsets([1,2,3]))
 ```
 
-## ⭐Recursive
+# ⭐Recursive
 
 ```python
 def powerSet(array, idx = None):
@@ -83,7 +81,7 @@ def powerSet(array, idx = None):
 powerSet([1,2,3])
 ```
 
-## 🌟Iterative
+# 🌟Iterative
 
 ```python
 def powerSet(array):

@@ -1,7 +1,17 @@
-# 994_Rotting_Oranges
+---
+title: Rotting Oranges
+number: 994
+date: 2020.06.09
 
-## 994. Rotting Oranges
-[https://leetcode.com/problems/rotting-oranges/](https://leetcode.com/problems/rotting-oranges/)
+---
+
+```toc
+
+```
+
+# Overview
+
+**Question Source:** [https://leetcode.com/problems/rotting-oranges/](https://leetcode.com/problems/rotting-oranges/)
 
 In a given grid, each cell can have one of three values:
 

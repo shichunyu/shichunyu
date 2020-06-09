@@ -1,4 +1,16 @@
-# 1447. Simplified Fractions
+---
+title: Simplified Fractions
+number: 1447
+date: 2020.05.16
+
+---
+
+```toc
+
+```
+
+# Overview
+
 Given an integer n, return a list of all simplified fractions between 0 and 1 (exclusive) such that the denominator is less-than-or-equal-to n. The fractions can be in any order.
 
 ```text

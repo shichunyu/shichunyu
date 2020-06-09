@@ -1,18 +1,17 @@
-# 912_Sort_an_Array
-```
 ---
 title: Sort an Array
 number: 912
 date: 2020.06.04
-tags: ["recursion"]
 ---
-```
 
 ```toc
+
 ```
 
 # Overview
+
 ## Sources
+
 **Question Source:** [Leetcode](https://leetcode.com/problems/sort-an-array/)
 **Merge Sort & Quick Sort:** AlgoExpert
 
@@ -386,7 +385,7 @@ def merge(a_list, l, m, r):
 		a_list[k] = R[j] 
 		j += 1
 		k += 1
-```   
+```
 ## In-Place Merge Sort: O(n*logn) / O(n)
 Swapping values in recursive algorithms is also used in [[Tower of Hanoi]]
 
@@ -541,4 +540,5 @@ Final output: [2,3,5,5,6,8,9]
 
 ## Code
 ```py
+
 ```

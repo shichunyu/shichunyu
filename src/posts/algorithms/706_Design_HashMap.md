@@ -1,4 +1,16 @@
-# 706_Design_HashMap
+---
+title: Design Hashmap
+number: 706
+date: 2020.06.04
+
+---
+
+```toc
+
+```
+
+# Overview
+
 > Note: Other answers on Leetcode are either LOL or cheat.  
 Design a HashMap without using any built-in hash table libraries.
 
