@@ -28,7 +28,7 @@ const Blog = (props) => {
     return (
         <Layout>
             <div>
-                <Head title={props.data.markdownRemark.frontmatter.title}/>
+                <Head title={`${props.data.markdownRemark.frontmatter.number}. ${props.data.markdownRemark.frontmatter.title}`}/>
                 <p className={styles.title}>{props.data.markdownRemark.frontmatter.number}. {props.data.markdownRemark.frontmatter.title}</p>
                 <p>Last Updated: {props.data.markdownRemark.frontmatter.date}</p>
                 <h3>Table of Contents</h3> 
