@@ -11,16 +11,9 @@ date: 2020.05.25
 
 # Overview
 
-The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
+Question Source: https://leetcode.com/problems/fibonacci-number/
 
-```text
-F(0) = 0,   F(1) = 1
-F(N) = F(N - 1) + F(N - 2), for N > 1.
-```
-
-Given N, calculate F(N).
-
-## Top Down - Recursive
+# Recursion w/ Memoization: O(n) / O(n)
 
 ```python
 fib_cache = {}
@@ -36,33 +29,76 @@ def memo_fib(n):
   return ret
 ```
 
-## Bottom Up - Dynamic Programming
+# Dynamic Programming: O(n) / O(n)
 
 ```python
-def dp_fib(n):
-   partial_answers = [1, 1]
-   while len(partial_answers) <= n:
-     partial_answers.append(partial_answers[-1] + partial_answers[-2])
-   return partial_answers[n]
-
-print memo_fib(5), dp_fib(5)
+class Solution:
+    def fib(self, N):
+        cur = 2
+        fib = [0,1]
+        if N >= 2:
+            while cur <= N:
+                fib.append(fib[cur-1]+fib[cur-2])
+                # print(fib)
+                cur += 1
+        return fib[N]
 ```
 
-## Dynamic Programming @shichunyu on May 25, 2020
+# Iterative: O(n) / O(1)
 
-> Runtime: O(N) Space: O(N)```python class Solution: def fib(self, N): """ type N: int rtype: int  
-
-```text
-    returns the Nth fibonacci number, starting with 0
-    """
-    cur = 2
-    fib = [0,1]
-    if N >= 2:
-        while cur <= N:
-            fib.append(fib[cur-1]+fib[cur-2])
-            # print(fib)
-            cur += 1
-    return fib[N]
+```python
+class Solution:
+    def fib(self, n):
+        if n == 0:
+            return 0
+        if n == 1:
+            return 1
+        prev_two = 0
+        prev_one = 1
+        for i in range(2, n+1):
+            current = prev_one + prev_two
+            prev_two = prev_one
+            prev_one = current
+        return prev_one
 ```
 
-s = Solution() print(s.fib(3)) ```
+# Matrix Exponentiation: O(log(n)) / O(log(n))
+
+Recommended video: [Gaurav Sen Youtube](https://www.youtube.com/watch?v=EEb6JP3NXBI&t=154s)
+
+By using binary exponentiation, we reduce the runtime from N to log(n).
+
+```python
+class Solution:
+    def fib(self, N):
+        if (N <= 1):
+            return N
+
+        A = [[1, 1], [1, 0]]
+        self.matrix_power(A, N-1)
+
+        return A[0][0]
+
+    def matrix_power(self, A: list, N: int):
+        if (N <= 1):
+            return A
+
+        self.matrix_power(A, N//2)
+        self.multiply(A, A)
+        B = [[1, 1], [1, 0]]
+
+        if (N%2 != 0):
+            self.multiply(A, B)
+
+    def multiply(self, A: list, B: list):
+        x = A[0][0] * B[0][0] + A[0][1] * B[1][0]
+        y = A[0][0] * B[0][1] + A[0][1] * B[1][1]
+        z = A[1][0] * B[0][0] + A[1][1] * B[1][0]
+        w = A[1][0] * B[0][1] + A[1][1] * B[1][1]
+
+        A[0][0] = x
+        A[0][1] = y
+        A[1][0] = z
+        A[1][1] = w
+```
+
