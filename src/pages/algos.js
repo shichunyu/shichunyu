@@ -17,7 +17,7 @@ const IndexPage = () => {
                 <p>I have no affiliation with Leetcode or AlgoExpert, I'm just a student :)</p>
                 <h2>Credits</h2>
                 <p>This site is built using <a href="https://www.gatsbyjs.org/">GatsbyJS</a> (GraphQL & Markdown Files).</p>
-                <p>Posts are written in <a href="https://bear.app/">Bear</a> and then exported as Markdown files for compiling.</p>
+                <p>Posts are written in markdown in <a href="https://typora.io/">Typora</a>.</p>
             </Layout>
         </div>
     )
