@@ -101,8 +101,8 @@ dic = {         array = [3,2,5,7,4]
 
 1.  Find the index of 7: `idx = dic[7]`. In this case, `idx = 3`
 2.  To get rid of 7 in the array, simply replace its value with the last element:
-    1.  Get the value of the last element: `last_val = array[-1]`. In this case, `last_val = 4`
-    2.  Replace 7 with 4: `array[3] = 4`'
+    -   Get the value of the last element: `last_val = array[-1]`. In this case, `last_val = 4`
+    -   Replace 7 with 4: `array[3] = 4`'
 
 ```
 dic = {         array = [3,2,5,4,4]
@@ -114,9 +114,7 @@ dic = {         array = [3,2,5,4,4]
 }
 ```
 
-
-
-1.  Now we can just get rid of the last element, since its redundant: `array.pop()`
+Now we can just get rid of the last element, since its redundant: `array.pop()`
 
 ```
 dic = {         array = [3,2,5,4]
@@ -128,7 +126,7 @@ dic = {         array = [3,2,5,4]
 }
 ```
 
-1.  But now, we must update the index of the last element in the dictionary: `dic[4] = 3`
+But now, we must update the index of the last element in the dictionary: `dic[4] = 3`
 
 ```
 dic = {         array = [3,2,5,4]
@@ -140,7 +138,7 @@ dic = {         array = [3,2,5,4]
 }
 ```
 
-1.  Finally, delete 7 from the dictionary: `del dic[7]`
+Finally, delete 7 from the dictionary: `del dic[7]`
 
 ```
 dic = {         array = [3,2,5,4]

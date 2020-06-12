@@ -121,7 +121,7 @@ a:hover {
 }
 
 ul {
-    margin-left: 1.45rem;
+    margin-left: 2rem;
     margin-right: 0;
     margin-top: 0;
     padding-bottom: 0;
@@ -133,6 +133,16 @@ ul {
     list-style-image: none;
     list-style: quote($string: "-  ");
 }
+
+li ul {
+    list-style: circle;
+}
+
+li ul li ul {
+    list-style: square;
+}
+
+
 
 ol {
     margin-left: 1.45rem;
@@ -146,6 +156,10 @@ ol {
     list-style-position: outside;
     list-style-image: none;
     list-style: decimal;
+}
+
+ul + p {
+    margin-top: 1rem;
 }
 
 .toc > ol, .toc > ul {
@@ -578,9 +592,6 @@ sup {
 //   margin-top: 0rem;
 // }
 // blockquote *:last-child {
-//   margin-bottom: 0;
-// }
-// li *:last-child {
 //   margin-bottom: 0;
 // }
 // p *:last-child {
