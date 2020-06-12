@@ -6,6 +6,7 @@ tags: ["Greedy", "Dynamic Programming", "Divide and Conquer"]
 ---
 
 ```toc
+
 ```
 
 # Overview
@@ -137,21 +138,41 @@ The previous solution is basically a messy implementation of Kadane's Algorithm.
 **Runtime:** O(N) since we have one pointer going through the length of the array
 **Space:** O(1) since we are only using pointers
 
-```py
+The leetcode solution:
+
+```python
 class Solution:
-    def maxSubArray(self, array):
-      max_val = array[0]
-      cur_max_val = array[0]
+    def maxSubArray(self, nums: 'List[int]') -> 'int':
+        n = len(nums)
+        max_sum = nums[0]
+        for i in range(1, n):
+            if nums[i - 1] > 0:
+                nums[i] += nums[i - 1] 
+            max_sum = max(nums[i], max_sum)
 
-      for i in range (1,len(array)):
-        cur_max_val = max(cur_max_val + array[i], array[i])
-        max_val = max(cur_max_val, max_val)
-
-      return max_val
-      
+        return max_sum
 ```
 
+Another solution without mutating the given array:
+
+```python
+class Solution:
+    def maxSubArray(self, nums):
+        global_max = float('-inf')
+        local_max = float('-inf')
+        for val in nums:
+            if local_max < 0:
+                local_max = val
+            else:
+                local_max += val
+            global_max = max(local_max, global_max)
+        return global_max
+```
+
+
+
 # ⭐️ Greedy: O(n) / O(1)
+
 ## Intuition
 The logic is slightly different from Kadane's Algorithm:
 * We should only add the current number to our subarray if it results in a sum that is greater than just starting a new subarray.
@@ -166,7 +187,7 @@ The logic is slightly different from Kadane's Algorithm:
 ```
 
 ## Code
-```py
+```python
 class Solution:
     def maxSubArray(self, nums):
         max_val = nums[0]

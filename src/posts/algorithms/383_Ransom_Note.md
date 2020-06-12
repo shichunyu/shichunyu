@@ -6,25 +6,11 @@ tags: ["string"]
 ---
 
 ```toc
+
 ```
 
 # Overview
-## Sources
 Question Source: [Ransom Note - LeetCode](https://leetcode.com/problems/ransom-note/)
-
-## Description
-
-Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
-
-Each letter in the magazine string can only be used once in your ransom note.
-
-**Note:**You may assume that both strings contain only lowercase letters.
-
-```text
-canConstruct("a", "b") -> false
-canConstruct("aa", "ab") -> false
-canConstruct("aa", "aab") -> true
-```
 
 # Brute Force: O(n^2^) / O(n)
 The time complexity of Python's `in` operator on a list is O(n). Since we have an O(n) operation inside the for-loop, which is also O(n), the total time complexity is O(n^2^).
@@ -69,12 +55,12 @@ s = Solution()
 print(s.canConstruct('abce','acacebij'))
 ```
 
-## Stacks: O(n*log(n)) / O(n)
+## Sort and Stacks: O(n*log(n)) / O(n)
 Yes you can implement the solution with stacks, but the dictionary solution is easier and more intuitive.
 
 From Leetcode:
 
-```py
+```python
 def canConstruct(self, ransomNote: str, magazine: str) -> bool:
     
     # Check for obvious fail case.

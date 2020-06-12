@@ -6,6 +6,7 @@ tags: ["recursion","two-pointer"]
 ---
 
 ```toc
+
 ```
 
 # Overview
@@ -42,7 +43,7 @@ Output: ["h","a","n","n","a","H"]
 
 ## Iterate append  and delete: O(n^2^) / O(n)
 Because of the `del s[0]` operation inside the while loop, the time complexity is O(n^2^)
-```py
+```python
 class Solution:
     def reverseString(self, s):
         length = len(s)
@@ -58,7 +59,7 @@ print(s.reverseString(["h", "e", "l", "l", "o"]))
 ```
 
 # Recursive Swap: O(n) / O(n)
-```py
+```python
 class Solution:
     def reverseString(self, s):
         return self._recurse(s,0,len(s)-1)
@@ -74,13 +75,13 @@ print(s.reverseString(["h", "e", "l", "l", "o"]))
 ```
 
 # ⭐️ Two-Pointer Swap: O(n) / O(1)
-```py
+```python
 class Solution:
     def reverseString(self, s):
         i = 0
         j = len(s)-1
 
-        while i < j and j > i:
+        while i < j:
             s[i], s[j] = s[j], s[i]
             i += 1
             j -= 1
@@ -91,7 +92,7 @@ print(s.reverseString(["h", "e", "l", "l", "o"]))
 ```
 
 # Slice: O(n) / O(n)
-```py
+```python
 class Solution:
     def reverseString(self, s):
         s[:] = s[::-1]
@@ -100,7 +101,7 @@ class Solution:
 # `Reverse()` Function: O(n) / O(1)
 The underlying implementation is using the swaps.
 
-```py
+```python
 class Solution:
     def reverseString(self, s):
         s.reverse()
