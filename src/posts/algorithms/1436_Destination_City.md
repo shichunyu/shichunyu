@@ -32,7 +32,27 @@ s.destCity([["A","Z"]]) # Z
 ```
 
 # Two Sets: O(n) / O(n)
+## Intuition
+
+The question states that there are no loops, and it looks like each city can only lead to one other city. Because of this property, we know that all the "Departure" cities are unique, and all the "Arrival" cities are unique. For unique values, we can represent them in a set:
+
+```
+Departure: {"London", "New York", "Lima"}
+Arrival: {"New York", "Lima", "Sao Paolo"}
+```
+
+Notice that New York and Lima are common to both sets. We can subtract the common elements form the Arrival set to isolate Sao Paolo, which is the destination city.
+
+```
+Arrival - Departure = {"Sao Paolo"}
+```
+
+For a review on how sets work, see [Python Set Operations](https://www.programiz.com/python-programming/set)
+
+The last thing we have to do is to get the value for the only element in the set. We can do this easily using `set.pop()`
+
 ## Note
+
 Note that this:
 ```py
 depart = set(paths[i][0] for i in range(len(paths)))
