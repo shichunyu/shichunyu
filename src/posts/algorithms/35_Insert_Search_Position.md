@@ -116,8 +116,17 @@ print(s.searchInsert([1,3,5,6],2)) # 1
 
 # Binary Search 2: O(log(n)) / O(1)
 
-This version is slightly different. Instead of moving the right pointer to middle, the right pointer moves to one left of middle. 
-When left > right, we return the left value.
+This version is slightly different. Instead of moving the right pointer to middle, the right pointer moves to one left of middle. When left > right, we return the left value. 
+
+This has to do with the fact that we want to insert the target element. We need to find the point at which the left element is smaller than the target, and the right element is equal to or greater than the target:
+
+```
+ 0 1 2 3
+[1,3,5,6] target 5
+    ^ the pivot point
+```
+
+Since we are inserting the target element, we need to insert it at index `2` above, which is the right side of the pivot point. So, the idea is that when the left pointer crosses the right pointer, the left pointer will be on the right side of the pivot, while the right pointer is on the left side. We can return the index of the left pointer because we want the right side of the pivot.
 
 ## Trace
 
@@ -182,16 +191,18 @@ Given `nums = [1,3,5,6]` and `target = 7`
 ```python
 class Solution:
     def searchInsert(self, nums, target):
-        left = 0, 
-        right = len(nums) - 1
-        while left <= right:
-            mid = left + (right - left) // 2
-            if nums[mid] == target:
-                return mid
-            if target < nums[mid]:
-                right = mid - 1
-            else:
-                left = mid + 1
-        return left
+        if target < nums[0]:
+            return 0
+        l = 0
+        r = len(nums) - 1
+        while l <= r:
+            m = l + (r-l) // 2
+            if nums[m] == target:
+                return m
+            elif nums[m] < target:
+                l = m + 1
+            elif nums[m] > target:
+                r = m - 1
+        return l
 ```
 
