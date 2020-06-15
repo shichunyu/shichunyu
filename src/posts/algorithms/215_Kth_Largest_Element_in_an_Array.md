@@ -11,25 +11,9 @@ date: 2020.05.22
 
 # Overview
 
-Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+Question Source: https://leetcode.com/problems/kth-largest-element-in-an-array
 
-```text
-Example 1:
-
-Input: [3, 2, 1, 5, 6, 4] and k = 2
-Output: 5
-```
-
-```text
-Example 2:
-
-Input: [3, 2, 3, 1, 2, 4, 5, 5, 6] and k = 4
-Output: 4
-```
-
-> **Note:** You may assume k is always valid, 1 ≤ k ≤ array's length.  
-
-## Minimum Priority Queue w/ MinHeap @shichunyu on May 22, 2020
+# Minimum Priority Queue w/ MinHeap
 
 ```python
 import heapq

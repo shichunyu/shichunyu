@@ -10,36 +10,9 @@ date: 2020.05.08
 
 # Overview
 
-> Note: Other answers on Leetcode are either LOL or cheat.  
-Design a HashMap without using any built-in hash table libraries.
+Question Source: https://leetcode.com/problems/design-hashmap
 
-To be specific, your design should include these functions:
-
-* put(key, value) : Insert a (key, value) pair into the HashMap. If the value already exists in the HashMap, update the value.
-* get(key): Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key.
-* remove(key) : Remove the mapping for the value key if this map contains the mapping for the key.
-
-```text
-Example:
-
-MyHashMap hashMap = new MyHashMap();
-hashMap.put(1, 1);          
-hashMap.put(2, 2);         
-hashMap.get(1);            // returns 1
-hashMap.get(3);            // returns -1 (not found)
-hashMap.put(2, 1);          // update the existing value
-hashMap.get(2);            // returns 1 
-hashMap.remove(2);          // remove the mapping for 2
-hashMap.get(2);            // returns -1 (not found)
-```
-
-Note:
-
-* All keys and values will be in the range of [0, 1000000].
-* The number of operations will be in the range of [1, 10000].
-* Please do not use the built-in HashMap library.
-
-## Using a list @shichunyu on May 8, 2020
+# Using a list
 `Put: O(1) Runtime` `Get: O(1) Runtime` `Remove: O(1) Runtime`
 
 Runtime: 328 ms, faster than 39.84% of Python3 online submissions for Design HashMap. Memory Usage: 16.9 MB, less than 9.09% of Python3 online submissions for Design HashMap.

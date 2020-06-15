@@ -6,6 +6,7 @@ tags: ["bit manipulation","dictionary/hash","sets","math"]
 ---
 
 ```toc
+
 ```
 
 # Overview
@@ -13,30 +14,6 @@ tags: ["bit manipulation","dictionary/hash","sets","math"]
 References:
 - How to use XOR: [YouTube](https://www.youtube.com/watch?v=VPw9vPN-3ac)
 - Python Sets: [8.7. sets — Unordered collections of unique elements — Python 2.7.18 documentation](https://docs.python.org/2/library/sets.html)
-
-## Description
-Given a non-empty array of integers, every element appears twice except for one. Find that single one.
-
-Note:
-
-Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
-
-```text
-Example 1:
-
-Input: [2,2,1]
-Output: 1
-Example 2:
-
-Input: [4,1,2,1,2]
-Output: 4
-
-4: 0
-1: 1
-2: 2
-
-i = 3 // 1
-```
 
 # Iteration: O(n^2^) / O(n)
 ```python

@@ -19,20 +19,6 @@ Resources:
 - Greedy Solution: [Back-to-Back SWE Youtube](https://www.youtube.com/watch?v=2MmGzdiKR9Y)
 - Kadane's Algorithm: [Byte-to-Byte Youtube](https://www.youtube.com/watch?v=hPWJNoaI7t8)
 
-## Description
-Given an integer array nums, find the contiguous subarray(containing at least one number) which has the largest sum and return its sum.
-
-```text
-Example:
-
-Input: [-2, 1, -3, 4, -1, 2, 1, -5, 4],
-Output: 6
-Explanation: [4, -1, 2, 1] has the largest sum = 6.
-Follow up:
-```
-
-> If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.  
-
 # "Brute Force" One Pointer Approach: O(N) / O(1)
 **Runtime:** O(N) because we traverse the array once only.
 **Space:** O(1) because we only use a pointer and store values in variables.

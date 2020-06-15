@@ -18,29 +18,6 @@ tags: ["recursion","two-pointer"]
 - [algorithm - Why is the big O of pop() different from pop(0) in python - Stack Overflow](https://stackoverflow.com/questions/34633178/why-is-the-big-o-of-pop-different-from-pop0-in-python)
 - [algorithm - Why does Python take O(n) time to remove the first element from a list? - Stack Overflow](https://stackoverflow.com/questions/37582225/why-does-python-take-on-time-to-remove-the-first-element-from-a-list)
 
-## Description
-Write a function that reverses a string. The input string is given as an array of characters char[].
-
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-
-You may assume all the characters consist of printable ascii characters.
-
-**Example 1:**
-
-```
-Input: ["h","e","l","l","o"]
-Output: ["o","l","l","e","h"]
-```
-
-**Example 2:**
-
-```
-Input: ["H","a","n","n","a","h"]
-Output: ["h","a","n","n","a","H"]
-```
-
-> Note: Do not return anything, modify the string in place.  
-
 ## Iterate append  and delete: O(n^2^) / O(n)
 Because of the `del s[0]` operation inside the while loop, the time complexity is O(n^2^)
 ```python

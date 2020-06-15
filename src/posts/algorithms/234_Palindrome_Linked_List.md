@@ -10,25 +10,9 @@ date: 2020.05.06
 
 # Overview
 
-Given a singly linked list, determine if it is a palindrome.
+Question Source: https://leetcode.com/problems/palindrome-linked-list
 
-```text
-Example 1:
-
-Input: 1->2
-Output: false
-```
-
-```text
-Example 2:
-
-Input: 1->2->2->1
-Output: true
-```
-
-**Follow up:** Could you do it in O(n) time and O(1) space?
-
-## ✅ Two Pointer @shichunyu on May 6, 2020
+# ✅ Two Pointer @shichunyu on May 6, 2020
 Runtime: 80 ms, faster than 22.80% of Python3 online submissions for Palindrome Linked List. Memory Usage: 28.9 MB, less than 7.69% of Python3 online submissions for Palindrome Linked List.
 
 ```python
@@ -111,7 +95,7 @@ print (s.isPalindrome(a)) # True
 """
 ```
 
-## Find Midpoint & Using Stack
+# Find Midpoint & Using Stack
 `O(N) Time` `O(N/2) Space`
 
 **Question:** would this work for odd lists?
@@ -142,7 +126,7 @@ def isPalindrome(self, head):
     return True
 ```
 
-## Reversing List
+# Reversing List
 `O(N) Time` `O(1) Space`
 
 ```python
@@ -174,7 +158,7 @@ def isPalindrome(self, head):
     return True
 ```
 
-## Using Dequeue
+# Using Dequeue
 
 ```python
 # O(n) space

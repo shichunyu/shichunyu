@@ -2,15 +2,15 @@
 title: Number of Connected Components in an Undirected Graph
 number: 323
 date: 2020.06.09
-
-
 ---
 
 ```toc
 
 ```
 
+# Overview
 
+Question Source: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph
 
 # BFS
 

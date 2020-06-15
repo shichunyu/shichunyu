@@ -11,42 +11,9 @@ date: 2020.05.16
 
 # Overview
 
-Given an integer n, return a list of all simplified fractions between 0 and 1 (exclusive) such that the denominator is less-than-or-equal-to n. The fractions can be in any order.
+Question Source: https://leetcode.com/problems/simplified-fractions
 
-```text
-Example 1:
-
-Input: n = 2
-Output: ["1/2"]
-Explanation: "1/2" is the only unique fraction with a denominator less-than-or-equal-to 2.
-```
-
-```text
-Example 2:
-
-Input: n = 3
-Output: ["1/2","1/3","2/3"]
-```
-
-```text
-Example 3:
-
-Input: n = 4
-Output: ["1/2","1/3","1/4","2/3","3/4"]
-Explanation: "2/4" is not a simplified fraction because it can be simplified to "1/2".
-```
-
-```text
-Example 4:
-
-Input: n = 1
-Output: []
-```
-
-### Constraints:
-1 <= n <= 100
-
-## Recursive Solution @shichunyu on May 16, 2020
+# Recursion
 How to detect if a fraction is "simple"?
 
 ODD DENOMINATOR ans = [(1/9), (2/9), (4/9), (5/9), (7/9), (8/9)] divisors = {3}

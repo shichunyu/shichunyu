@@ -11,51 +11,9 @@ date: 2020.06.09
 
 # Overview
 
-Given a string s, the power of the string is the maximum length of a non-empty substring that contains only one unique character.
+Question Source: https://leetcode.com/problems/consecutive-characters
 
-Return the power of the string.
-
-**Example 1:**
-
-```text
-Input: s = "leetcode"
-Output: 2
-Explanation: The substring "ee" is of length 2 with the character 'e' only.
-```
-
-**Example 2:**
-
-```text
-Input: s = "abbcccddddeeeeedcba"
-Outv
-Explanation: The substring "eeeee" is of length 5 with the character 'e' only.
-```
-
-**Example 3:**
-
-```text
-Input: s = "triplepillooooow"
-Output: 5
-```
-
-**Example 4:**
-
-```text
-Input: s = "hooraaaaaaaaaaay"
-Output: 11
-```
-
-**Example 5:**
-
-```text
-Input: s = "tourist"
-Output: 1
-```
-
-## Constraints:
-
-* 1 <= s.length <= 500
-* s contains only lowercase English letters.
+# Solution
 
 ```python
 class Solution:

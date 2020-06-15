@@ -10,32 +10,8 @@ date: 2020.06.04
 
 # Overview
 
-## Sources
-
 **Question Source:** [Leetcode](https://leetcode.com/problems/sort-an-array/)
 **Merge Sort & Quick Sort:** AlgoExpert
-
-## Description
-Given an array of integers nums, sort the array in ascending order.
-
-**Example 1:**
-
-```
-Input: nums = [5,2,3,1]
-Output: [1,2,3,5]
-```
-
-**Example 2:**
-
-```
-Input: nums = [5,1,1,2,0,0]
-Output: [0,0,1,1,2,5]
-```
-
-**Constraints:**
-
-    1 <= nums.length <= 50000
-    -50000 <= nums[I] <= 50000
 
 # Simple Sorts
 Simple sorts are **In-Place Sorts** meaning the original array is mutated directly and no extra space is needed.
