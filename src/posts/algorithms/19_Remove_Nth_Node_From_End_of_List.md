@@ -8,7 +8,7 @@ date: 2020.05.05
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/remove-nth-node-from-end-of-list
 

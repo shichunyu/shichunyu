@@ -9,8 +9,7 @@ tags: [“dynamic programming”]
 
 ```
 
-# Overview
-## Sources
+# Resources
 Question Source: [Code Interview Gym Github](https://github.com/partho-maple/coding-interview-gym/blob/master/algoexpert.io/questions/Max_Sum_Increasing_Subsequence.md)
 Resources: AlgoExpert.io
 

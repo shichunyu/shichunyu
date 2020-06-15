@@ -9,7 +9,7 @@ date: 2020.06.01
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/invert-binary-tree
 

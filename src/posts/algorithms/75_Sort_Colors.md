@@ -8,7 +8,7 @@ date: 2020.06.11
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/sort-colors/
 

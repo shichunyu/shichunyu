@@ -9,7 +9,7 @@ date: 2020.06.02
 
 ```
 
-# Overview
+# Resources
 Question Source: [Leetcode](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
 # Solution: O(1) / O(1)

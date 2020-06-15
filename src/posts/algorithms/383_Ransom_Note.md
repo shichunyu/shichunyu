@@ -9,7 +9,7 @@ tags: ["string"]
 
 ```
 
-# Overview
+# Resources
 Question Source: [Ransom Note - LeetCode](https://leetcode.com/problems/ransom-note/)
 
 # Brute Force: O(n^2^) / O(n)

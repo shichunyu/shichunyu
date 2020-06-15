@@ -9,7 +9,7 @@ date: 2020.06.09
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/employee-importance
 

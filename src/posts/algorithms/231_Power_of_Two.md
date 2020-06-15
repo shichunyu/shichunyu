@@ -9,7 +9,7 @@ tags: ["bit manipulation"]
 
 ```
 
-# Overview
+# Resources
 
 Question Source: [Power of Two - LeetCode](https://leetcode.com/problems/power-of-two/)
 

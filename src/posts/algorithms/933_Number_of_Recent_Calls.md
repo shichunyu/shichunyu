@@ -9,7 +9,7 @@ date: 2020.05.07
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/number-of-recent-calls
 

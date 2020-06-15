@@ -9,9 +9,11 @@ tags: ["bit manipulation","dictionary/hash","sets","math"]
 
 ```
 
-# Overview
-## Sources
+# Resources
+Question Source: https://leetcode.com/problems/single-number
+
 References:
+
 - How to use XOR: [YouTube](https://www.youtube.com/watch?v=VPw9vPN-3ac)
 - Python Sets: [8.7. sets — Unordered collections of unique elements — Python 2.7.18 documentation](https://docs.python.org/2/library/sets.html)
 

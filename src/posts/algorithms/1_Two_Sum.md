@@ -9,7 +9,7 @@ tags: ["dictionary/hash","binary search","recursion"]
 
 ```
 
-# Overview
+# Resources
 ## Todo
 - [ ] Add in time/space complexity for all solutions
 

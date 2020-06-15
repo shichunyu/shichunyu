@@ -8,7 +8,7 @@ date: 2020.06.09
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph
 

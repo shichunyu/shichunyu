@@ -8,7 +8,7 @@ tags: [“dynamic programming”,”recursion”]
 ```toc
 
 ```
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/unique-paths-ii
 

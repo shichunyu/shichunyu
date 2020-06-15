@@ -9,8 +9,7 @@ tags: ["greedy","recursion","dynamic programming"]
 
 ```
 
-# Overview
-## Source
+# Resources
 Question Source: [Leetcode](https://leetcode.com/problems/two-city-scheduling/solution/)
 
 # O(n^2^) Runtime Solutions

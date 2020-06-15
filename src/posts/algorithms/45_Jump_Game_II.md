@@ -9,8 +9,7 @@ tags: [“dynamic programming”]
 
 ```
 
-# Overview
-## Sources
+# Resources
 Question Source: [Leetcode](https://leetcode.com/problems/jump-game-ii)
 Resources: AlgoExpert.io
 

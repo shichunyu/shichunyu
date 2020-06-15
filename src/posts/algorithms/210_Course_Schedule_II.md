@@ -9,7 +9,7 @@ date: 2020.05.15
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/course-schedule-ii
 

@@ -8,7 +8,7 @@ date: 2020.05.31
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/coin-change-2
 Helpful Explanations: Algoexpert.io

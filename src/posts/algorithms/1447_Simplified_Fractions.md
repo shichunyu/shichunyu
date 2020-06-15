@@ -9,7 +9,7 @@ date: 2020.05.16
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/simplified-fractions
 

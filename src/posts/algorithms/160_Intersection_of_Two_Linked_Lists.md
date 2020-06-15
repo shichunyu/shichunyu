@@ -8,7 +8,7 @@ date: 2020.05.22
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/intersection-of-two-linked-lists
 

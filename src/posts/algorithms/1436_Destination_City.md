@@ -9,7 +9,7 @@ tags: ["dictionary/hash", "sets"]
 
 ```
 
-# Overview
+# Resources
 Question Source: [Destination City - LeetCode](https://leetcode.com/problems/destination-city/)
 
 # Dictionary: O(n) / O(n)

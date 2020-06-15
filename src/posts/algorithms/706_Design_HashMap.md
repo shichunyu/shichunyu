@@ -8,7 +8,7 @@ date: 2020.05.08
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/design-hashmap
 

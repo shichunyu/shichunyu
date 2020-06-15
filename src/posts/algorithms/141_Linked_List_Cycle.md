@@ -8,7 +8,7 @@ date: 2020.05.04
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/linked-list-cycle
 

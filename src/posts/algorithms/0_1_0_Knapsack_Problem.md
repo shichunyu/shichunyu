@@ -5,7 +5,7 @@ date: 2020.05.29
 tags: [“dynamic programming”]
 ---
 
-# Overview
+# Resources
 
 **Question Souce:** [Byte-to-Byte](https://www.byte-by-byte.com/01knapsack/)
 

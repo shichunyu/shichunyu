@@ -9,7 +9,7 @@ tags: ["binary search"]
 
 ```
 
-# Overview
+# Resources
 Question Source: [Random Pick with Weight - LeetCode](https://leetcode.com/problems/random-pick-with-weight/)
 
 

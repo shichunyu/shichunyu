@@ -8,7 +8,7 @@ date: 2020.05.06
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/palindrome-linked-list
 

@@ -9,7 +9,7 @@ date: 2020.06.01
 
 ```
 
-# Description
+# Resources
 
 Question Source: https://leetcode.com/problems/edit-distance
 

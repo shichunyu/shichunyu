@@ -8,7 +8,7 @@ date: 2020.06.12
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/insert-delete-getrandom-o1/
 

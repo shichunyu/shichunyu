@@ -9,7 +9,7 @@ date: 2020.05.25
 
 ```
 
-# Overview
+# Resources
 
 Question Source: https://leetcode.com/problems/fibonacci-number/
 

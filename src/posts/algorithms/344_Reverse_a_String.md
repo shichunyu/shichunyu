@@ -9,10 +9,10 @@ tags: ["recursion","two-pointer"]
 
 ```
 
-# Overview
-## Sources
+# Resources
 **Question Source:** [Reverse String - LeetCode](https://leetcode.com/problems/reverse-string/solution/)
 **Useful References:** 
+
 - [Complexity of Python Built-In Functions](https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt)
 - [Time and Space complexity analysis of Python’s list.reverse() method - The Coding Bot](https://thecodingbot.com/time-and-space-complexity-analysis-of-pythons-list-reverse-method/)
 - [algorithm - Why is the big O of pop() different from pop(0) in python - Stack Overflow](https://stackoverflow.com/questions/34633178/why-is-the-big-o-of-pop-different-from-pop0-in-python)

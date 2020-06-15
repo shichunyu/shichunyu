@@ -9,7 +9,7 @@ tags: [“recursion”, “dynamic programming”]
 
 ```
 
-# Overview
+# Resources
 Question Source: https://leetcode.com/problems/climbing-stairs/
 
 Video Explanation: [Back-to-Back SWE Youtube](https://www.youtube.com/watch?v=NFJ3m9a1oJQ)

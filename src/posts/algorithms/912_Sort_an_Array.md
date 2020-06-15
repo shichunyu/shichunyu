@@ -8,7 +8,7 @@ date: 2020.06.04
 
 ```
 
-# Overview
+# Resources
 
 **Question Source:** [Leetcode](https://leetcode.com/problems/sort-an-array/)
 **Merge Sort & Quick Sort:** AlgoExpert

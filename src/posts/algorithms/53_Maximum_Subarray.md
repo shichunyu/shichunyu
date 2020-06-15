@@ -9,7 +9,7 @@ tags: ["Greedy", "Dynamic Programming", "Divide and Conquer"]
 
 ```
 
-# Overview
+# Resources
 ## Todo
 - [ ] Review Divide & Conquer Solution
 
