@@ -118,21 +118,86 @@ class Solution:
 # Two-Pointer: O(n) / O(1)
 
 ```python
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
 class Solution:
-    def getIntersectionNode(self, headA, headB):
+    def getIntersectionNode(self, headA, headB): 
         a = headA
         b = headB
         if a == None or b == None:
             return None
         while a != b:
-            if a == None:
+            a = a.next
+            b = b.next
+            if a == None and b == None:
+                return None
+            elif a == None:
                 a = headB
-            else: 
-                a = a.next
-            if b == None:
+            elif b == None:
                 b = headA
-            else:
-                b = b.next
         return a
+
+if __name__ == '__main__':
+    # Set up the linked lists
+    # 1 -> 2 -> 3 -> 4
+    # 1 -> 2 -> 3
+    a1 = ListNode('1')
+    a2 = ListNode('2')
+    a3 = ListNode('3')
+    a4 = ListNode('4')
+
+    b1 = ListNode('1')
+    b2 = ListNode('2')
+    b3 = ListNode('3')
+
+    a1.next = a2
+    a2.next = a3
+    a3.next = a4
+    b1.next = b2
+    b2.next = b3
+
+    # no intersection
+    s = Solution()
+    if s.getIntersectionNode(a1,b1) == None:
+        print(s.getIntersectionNode(a1,b1))
+    else:
+        print(s.getIntersectionNode(a1,b1).val)
+        
+    # intersection at 2
+    b1.next = a2
+    
+    if s.getIntersectionNode(a1,b1) == None:
+        print(s.getIntersectionNode(a1,b1))
+    else:
+        print(s.getIntersectionNode(a1,b1).val)
+    
+    # intersection at 4
+    b1.next = b2
+    b3.next = a4
+
+    if s.getIntersectionNode(a1,b1) == None:
+        print(s.getIntersectionNode(a1,b1))
+    else:
+        print(s.getIntersectionNode(a1,b1).val)
+
+    # intersection at 1
+    b1 = a1
+    
+    if s.getIntersectionNode(a1,b1) == None:
+        print(s.getIntersectionNode(a1,b1))
+    else:
+        print(s.getIntersectionNode(a1,b1).val)
+
+    # None edge case
+    b1 = None
+    
+    if s.getIntersectionNode(a1,b1) == None:
+        print(s.getIntersectionNode(a1,b1))
+    else:
+        print(s.getIntersectionNode(a1,b1).val)
 ```
 
