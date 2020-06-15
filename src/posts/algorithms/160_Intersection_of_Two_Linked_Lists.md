@@ -10,37 +10,23 @@ date: 2020.05.22
 
 # Overview
 
-Write a program to find the node at which the intersection of two singly linked lists begins. Example 1:
+## Two-Pointer Brute Force: O(n^2^) / O(1)
 
-```text
-Input: intersectVal = 8, listA = [4,1,8,4,5], listB = [5,0,1,8,4,5], skipA = 2, skipB = 3
-Output: Reference of the node with value = 8
-Input Explanation: The intersected node's value is 8 (note that this must not be 0 if the two lists intersect). From the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,0,1,8,4,5]. There are 2 nodes before the intersected node in A; There are 3 nodes before the intersected node in B.
-```
+Let's say there are 2 pointers, `a` and `b`. For every `a` we check if `b` is at the same node.
 
-Example 2:
+![IMG_CD045431A084-1](160_Intersection_of_Two_Linked_Lists/IMG_CD045431A084-1.jpeg)
 
-```text
-Input: intersectVal = 2, listA = [0,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
-Output: Reference of the node with value = 2
-Input Explanation: The intersected node's value is 2 (note that this must not be 0 if the two lists intersect). From the head of A, it reads as [0,9,1,2,4]. From the head of B, it reads as [3,2,4]. There are 3 nodes before the intersected node in A; There are 1 node before the intersected node in B.
-```
+When `a = 1` we'll have to check b = `3`,`4`,`5`...`7` . No matches, so we move `a` and go again...
 
-Example 3:
+Now `a = 2` and we'll check b = `3`,`4`,`5`...`7` . No matches, so we move `a` and go again...
 
-```text
-Input: intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
-Output: null
-Input Explanation: From the head of A, it reads as [2,6,4]. From the head of B, it reads as [1,5]. Since the two lists do not intersect, intersectVal must be 0, while skipA and skipB can be arbitrary values.
-Explanation: The two lists do not intersect, so return null.
-```
+Now `a = 6` and we'll check b = `3`,`4`,`5`,`6`. It matches! So `6` is the intersecting node.
 
-**Notes:**
+However, this approach has an O(n^2^ ) runtime. Suppose `m` is the length of linked list `a` and `n` is the length of linked list `b`. In the worse case scenario, the very last node is the intersection node, and we'll have to do `m*n` checks. When `m=n` we will have `m*m` runtime which is O(n^2^).
 
-If the two linked lists have no intersection at all, return null. The linked lists must retain their original structure after the function returns. You may assume there are no cycles anywhere in the entire linked structure. Your code should preferably run in O(n) time and use only O(1) memory.
+The space complexity is O(1) because we've only used two pointers.
 
-## ✅ ChunYu @ May 5, 2020
-Runtime: 196 ms, faster than 10.04% of Python3 online submissions for Intersection of Two Linked Lists. Memory Usage: 30.5 MB, less than 100.00% of Python3 online submissions for Intersection of Two Linked Lists.
+## Dictionary: O(n) / O(n)
 
 ```python
 # Definition for singly-linked list.
@@ -105,7 +91,7 @@ if __name__ == '__main__':
     assert s.getIntersectionNode(a1,b1)
 ```
 
-## ⭐️ Solution using Set
+## Set: O(n) / O(n)
 
 ```python
 class Solution:
@@ -126,3 +112,25 @@ class Solution:
             return node2
         return None
 ```
+
+# Two-Pointer: O(n) / O(1)
+
+```python
+class Solution:
+    def getIntersectionNode(self, headA, headB):
+        a = headA
+        b = headB
+        if a == None or b == None:
+            return None
+        while a != b:
+            if a == None:
+                a = headB
+            else: 
+                a = a.next
+            if b == None:
+                b = headA
+            else:
+                b = b.next
+        return a
+```
+
