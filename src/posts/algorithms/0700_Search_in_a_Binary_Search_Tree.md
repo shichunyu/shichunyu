@@ -16,7 +16,7 @@ Question Source: https://leetcode.com/problems/search-in-a-binary-search-tree/
 
 ## Intuition
 
-**Binary Search Trees** have the property that the the child node on the left of the parent is smaller than the parent, and the child node on the right of the parent is greater than the parent:
+**Binary Search Trees** have the property that *all* the children node (down to the bottom) to the left of the parent is smaller than the parent, and all the children node on the right of the parent is greater than the parent:
 
  ![Education P1](0700_Search_in_a_Binary_Search_Tree/Education P1.png)
 
@@ -31,9 +31,29 @@ Since we are given the root of a binary tree, we can traverse the tree based on 
 
 In the worst case scenario, the time complexity for binary tree search is O(n) because the tree is unbalanced and looks like this:
 
+```
+        5
+       /
+      4
+     /
+    3
+   /
+  2
+ /
+1
+```
+
 In the above case, we have to traverse every node, so we traverse n times, and have O(n) runtime.
 
 However, for a balanced binary tree like below:
+
+```text 
+           5
+         /   \
+        4     7
+       / \   / \
+      2   5 6   9
+```
 
 We have O(log(n)) runtime because we only have to traverse the height of the tree, which is log~2~(n).
 
