@@ -42,43 +42,43 @@ This approach takes advantage of the fact that we have only 3 numbers: `0,1,2`
 
 We know that `0` must be on the very left, `2` must be on the very right, and `1` in between them.
 
-The key is to know where the 0's end and where the 2's start, so we initialize 2 variables to keep track of them: `last_zero` and `first_two`.
+The key is to know where the 0's end and where the 2's start, so we initialize 2 variables to keep track of them: `l` and `r`.
 
-*   We initialize `last_zero` at `-1` or right before the start of the array
-*   We initialize `first_two` at `len(array)` or right after the last element of the array.
+*   We initialize `l` at `-1` or right before the start of the array
+*   We initialize `r` at `len(array)` or right after the last element of the array.
 
 We will have another variable to keep track of the element we are assessing, called `i` which iterates over the array starting from index 0:
 
--   If the element is a `0` and it is after the `last_zero`, we should move it to the front of the array.
+-   If the element is a `0` and it is after the `l`, we should move it to the front of the array.
 
--   If the element is a `2` and it is before the `first_two` we should move it ot the right of the array.
+-   If the element is a `2` and it is before the `r` we should move it ot the right of the array.
 
 Otherwise, for 0s and 1s we should simply move our pointer `i` forward.
 
-If we encounter a 2 and it is equal to the `first_two` it means we can stop our sorting because we've sorted everything
+If we encounter a 2 and it is equal to the `r` it means we can stop our sorting because we've sorted everything
 
 ## Trace
 
-In the below trace, we'll use `|` to indicate the position of the `last_zero` and `first_two`.
+In the below trace, we'll use `|` to indicate the position of the `l` and `r`.
 
 ```
-[|2,0,2,1,1,0|] i = 2 and is before first_two, so move it to the end. Decrement first_two by 1
+[|2,0,2,1,1,0|] i = 2 and is before r, so move it to the end. Decrement r by 1
   i
-[|0,2,1,1,0|2] i = 0 and it is before the first_zero, so move it to the front. Increment last_zero by 1
+[|0,2,1,1,0|2] i = 0 and it is before the first_zero, so move it to the front. Increment l by 1
   i
-[0|2,1,1,0|2] i = 0 but it is equal to last_zero, so increment i by 1.
+[0|2,1,1,0|2] i = 0 but it is equal to l, so increment i by 1.
  i
-[0|2,1,1,0|2] i = 2 and is before first_two, so move it to the end. Decrement first_two by 1
+[0|2,1,1,0|2] i = 2 and is before r, so move it to the end. Decrement r by 1
    i
 [0|1,1,0|2,2] i = 1. Increment i by 1
    i
 [0|1,1,0|2,2] i = 1. Increment i by 1
      i
-[0|1,1,0|2,2] i = 0 and it is before the first_zero, so move it to the front. Increment last_zero by 1
+[0|1,1,0|2,2] i = 0 and it is before the first_zero, so move it to the front. Increment l by 1
        i
 [0,0|1,1|2,2] i = 1. Increment i by 1
        i
-[0,0|1,1|2,2] i = 2 but it is equal to first_two. Our sorting is done!
+[0,0|1,1|2,2] i = 2 but it is equal to r. Our sorting is done!
          i
 ```
 
@@ -90,22 +90,22 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        last_zero = -1
-        first_two = len(nums)
+        l = -1
+        r = len(nums)
         i = 0
         while i < len(nums):
-            if nums[i] == 0 and i != last_zero:
+            if nums[i] == 0 and i != l:
                 del nums[i]
                 nums.insert(0,0)
-                last_zero += 1
+                l += 1
                 i += 1
-            elif nums[i] == 0 and i == last_zero:
+            elif nums[i] == 0 and i == l:
                 i += 1
-            elif nums[i] == 2 and i != first_two:
+            elif nums[i] == 2 and i != r:
                 del nums[i]
                 nums.append(2)
-                first_two -= 1
-            elif nums[i] == 2 and i == first_two:
+                r -= 1
+            elif nums[i] == 2 and i == r:
                 break
             else:
                 i += 1
@@ -123,27 +123,27 @@ s.sortColors([2,0,2,1,1,0])
 
 Instead of deleting the element and moving it to the front, we can also swap elements. This makes the code a bit shorter.
 
--   Instead of initializing `last_zero` at `-1`, we initialize it at `0` or the first index of the array.
+-   Instead of initializing `l` at `-1`, we initialize it at `0` or the first index of the array.
 
--   Instead of initializing `first_two` at `len(nums)` we initialize it at `len(nums)-1` or the last index of the array.
+-   Instead of initializing `r` at `len(nums)` we initialize it at `len(nums)-1` or the last index of the array.
 -   Instead of iterating `i` trhough the entire array, we only need to iterate i until it reaches `first-two` (technically this is true of the previous code as well).
 
 ### Trace
 
-In the below trace, we'll use `|` to indicate the position of the `last_zero` and `first_two`.
+In the below trace, we'll use `|` to indicate the position of the `l` and `r`.
 
 ```
-[2|0,2,1,1,|0] i = 2 and is before first_two, so swap it with the element at first_two. Decrement first_two by 1
+[2|0,2,1,1,|0] i = 2 and is before right, so swap it with the element at right. Decrement r by 1
  i
-[0,0,2,1|1,2] i = 0 so swap it with the element at last_zero (which happens to be itself). Increment i and last_zero by 1
+[0,0,2,1|1,2] i = 0 so swap it with the element at l (which happens to be itself). Increment i and l by 1
  i
-[0,0|2,1|1,2] i = 0 so swap it with the element at last_zero. Increment i and last_zero by 1
+[0,0|2,1|1,2] i = 0 so swap it with the element at l. Increment i and l by 1
    i
-[0,0,2|1,|1,2] i = 2 and is before first_two, so swap it with the element at first_two. Decrement first_two by 1
+[0,0,2|1,|1,2] i = 2 and is before right, so swap it with the element at r. Decrement r by 1
      i
 [0,0,1||1,2,2] i = 1. Increment i by 1
      i
-[0,0,1||1,2,2] i > first_two. We are done sorting!
+[0,0,1||1,2,2] i > r. We are done sorting!
         i
 ```
 
@@ -151,21 +151,27 @@ In the below trace, we'll use `|` to indicate the position of the `last_zero` an
 
 ```python
 class Solution:
-    def sortColors(self, nums: List[int]) -> None:
-		"""
+    def sortColors(self, nums):
+        """
         Do not return anything, modify nums in-place instead.
         """
-        first_zero = 0
-        last_two = len(nums) - 1
+        l = 0
+        r = len(nums)-1
         i = 0
-        while i <= last_two:
+        while i <= r:
             if nums[i] == 0:
-                nums[first_zero], nums[i] = nums[i], nums[first_zero]
-                first_zero += 1
+                nums[l], nums[i] = nums[i], nums[l]
+                l += 1
+                # note that we can increment i here because all the numbers before i are guaranteed to be 0s, so they are already sorted
                 i += 1
             elif nums[i] == 2:
-                nums[i], nums[last_two] = nums[last_two], nums[i]
-                last_two -= 1
+                nums[r], nums[i] = nums[i], nums[r]
+                r -= 1
+                # notice that we don't increment i here. This is because we still need to sort the new number that we swapped with.
             else:
                 i += 1
+
+
+s = Solution()
+print(s.sortColors([2, 0, 2, 1, 1, 0]))
 ```
