@@ -1,5 +1,11 @@
 import React from 'react'
 
+import BlogList from '../AlgoList/AlgoList'
+import Footer from '../Footer/footer'
+import Header from '../Header/Header'
+import Content from '../Content/Content'
+
+
 import layoutStyles from './layout.module.scss'
 
 const Layout = (props) => {
