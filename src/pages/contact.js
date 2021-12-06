@@ -8,7 +8,8 @@ const ContactPage = () => {
             <Layout>
                 <Head title="Contact"/>
                 <h1>Get in touch</h1>
-                <p>Tweet @shicarriesyou</p>
+                <p>https://github.com/shichunyu/</p>
+                <p>shicyu@icloud.com</p>
             </Layout>
         </div>
     )
