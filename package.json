@@ -29,7 +29,7 @@
     "gatsby-remark-sub-sup": "^1.0.0",
     "gatsby-remark-table-of-contents": "0.0.9",
     "gatsby-source-filesystem": "^2.3.8",
-    "gatsby-transformer-remark": "^2.8.14",
+    "gatsby-transformer-remark": "^5.25.1",
     "gh-pages": "^3.0.0",
     "node-sass": "^4.14.1",
     "postcss-modules-values": "^3.0.0",
